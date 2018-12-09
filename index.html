@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sale manager</title>
+</head>
+<body>
+  <main class="wrapper">
+    <section class="user-info">
+      <div class="user clearfix">
+        <div class="user__img"></div>
+        <h3 class="user__name">Вероника Ростова</h3>
+        <p class="user__prof">Менеджер по продажам</p>
+        <div class="user__descr">
+          Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны
+        </div>
+      </div>
+      <div class="table">
+        <div class="table-up">
+          <span class="table-up__title">Услуг</span>
+        </div>
+        <div class="table-box">
+          <table class="table__items">
+            <tr>
+              <td class="table__item">
+                <span class="table__text">Ручное бронирование</span>
+                <div class="table__scale table__scale--up"></div>
+              </td>
+              <td class="table__num">11</td>
+            </tr>
+            <tr>
+              <td class="table__item">
+                <span class="table__text">Пакетные туры</span>
+                <div class="table__scale table__scale--middle"></div>
+              </td>
+              <td class="table__num">3</td>
+            </tr>
+            <tr>
+              <td class="table__item">
+                <span class="table__text">Отели</span>
+                <div class="table__scale table__scale--down"></div>
+              </td>
+              <td class="table__num">1</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-down">
+          <div class="table-down__text">Всего</div>
+          <div class="table-down__num">15</div>
+        </div>
+      </div>
+    </section> 
+    <section class="comments">
+      <div class="comments-head">
+        <div class="comments-head__text"> 
+          <h3 class="comments-head__title">Последние отзывы</h3>
+          <a class="comments-head__link" href="#">Все отзывы</a>
+        </div>
+        <div class="comments-head__social">
+          <button class="social__btn" onclick="toggleLike()">
+            <i class="fas fa-heart"></i>
+            <span class="social__btn--heart">131</span>
+          </button>
+          <button class="social__btn">
+              <i class="fas fa-comment-alt"></i>
+            <span class="social__btn--comment">14</span>
+          </button>
+        </div>
+      </div>
+      <div class="comments-body">
+        <div class="comment">
+          <h4 class="comment__user">Самуил</h4>
+          <span class="comment__date">13 октября 2011</span>
+          <div class="comment__text">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</div>
+        </div>
+        <div class="comment">
+          <h4 class="comment__user">Лилия Семёновна</h4>
+          <span class="comment__date">14 октября 2011</span>
+          <div class="comment__text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц 
+            жизненно стабилизирует кинетический момент, это и есть всемирно известный центр 
+            огранки алмазов и торговли бриллиантами?
+          </div>
+        </div>
+        <div class="comment">
+          <h4 class="comment__user">Лилия Семёновна</h4>
+          <span class="comment__date">14 октября 2011</span>
+          <div class="comment__text">Вероника, здравствуйте! Есть такой вопрос: Особый вид 
+            куниц жизненно стабилизирует кинетический момент?
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="add-comment">
+      <div class="wrapper">
+        <div class="comment-notice">* 500 Р — это депозит, мы вернем вам эти деньги после первой продажи.</div>
+        <form class="comment-form">
+          <textarea class="comment-form__text" placeholder="Ваш комментарий" onkeypress="addComm2(event)"></textarea>
+          <input class="comment-form__btn" type="button" value="Написать консультанту" onclick="addComm(event)">
+        </form>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
